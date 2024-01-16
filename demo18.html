@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>demo18</title>
+        <script>
+            //Arrays
+            document.writeln("Demo on arrays </br>")
+            let a = [10,20,30] //same type of  elements 
+            document.writeln( a +"+</br>")
+            document.writeln(typeof a +"</br>")
+            document.writeln(a.length+"</br>")
+            document.writeln(a[0]+"</br>")
+            document.writeln(a[2]+"</br>")
+            document.writeln(a[7]+"</br>")
+            document.writeln(typeof a[0]+"</br>")
+            a[2]="klu"
+            document.writeln( a +"</br>")
+            a[3] = "cse"
+            document.writeln( a +"</br>") // 10,20,klu,cse
+            a.push("40")
+            a.push("MSWD")
+            document.writeln( a +"</br>")
+            document.writeln(a.length+"</br>")
+           a.pop()
+            document.writeln(a.length+"</br>")
+            //reverse of array
+            document.writeln(a.reverse()+"</br>")
+            //sorting array
+            document.writeln(a.sort()+"</br>")
+
+            document.writeln("Array:"+a+"</br>")
+            //removes the first element
+          let element = a.shift()
+          // returns  the first element 
+          document.writeln(element+"</br>")
+          document.writeln("After shifting:"+a+"</br>")
+          let len =  a.unshift(10)
+          document.writeln(len+"</br>")
+          document.writeln("after unshifting:"+a+"</br>")
+          document.writeln("<u>Display array elements using for loop</u>"+"</br>")
+          for(let i=0;i<a.length;i++)
+          {
+            document.writeln(a[i]+"</br>")
+          }
+          document.writeln("<u>Display array elements using for  in loop</u>"+"</br>")
+          for(let i  in a )
+          {
+            document.writeln(a[i]+"</br>")
+          }
+          document.writeln("<u>Display array elements using for  of loop</u>"+"</br>")
+          for(let element  of a )
+          {
+            document.writeln(element+"</br>")
+          }
+
+
+          
+
+
+          
+
+
+
+
+
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+       
+
+    </body>
+</html>

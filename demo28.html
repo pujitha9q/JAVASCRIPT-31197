@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>demo28</title>
+        <script>
+           // map object - key value pair
+             const  demomap = new Map ()
+             demomap.set("id",123)
+             demomap.set("name","klu")
+             demomap.set("age",30)
+             demomap.set("status",false)
+             demomap.set("name","klef") // - > duplicate key -klu will be updated as klef,existing key value will be updated
+             //(keys must be unique . repeated keys will not be taken )
+
+             document.writeln("map size ="+demomap.size+"</br>")
+            document.writeln("map type="+typeof demomap+"</br>")
+
+            document.writeln(demomap.get("id")+"</br>")
+
+            document.writeln(demomap.get("location")+"</br>") //undefined
+            document.writeln(demomap.has("location")+"</br>") //false
+            document.writeln(demomap.delete("status")+"</br>")
+            document.writeln("map size="+demomap.size+"</br>")
+
+            document.writeln("<u>Display map keys</u></br>")
+
+            for(let k of demomap.keys())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display map values</u></br>")
+
+            for(let v of demomap.values())
+            {
+                document.writeln(v)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display map values based on keys</u></br>")
+
+           for( let  k of demomap.keys())
+           {
+             document.writeln(demomap.get(k))
+           }
+           document.writeln("</br>")
+
+           document.writeln("<u> Display map  keys and values </u></br>")
+
+           for(  const [k,v] of demomap.entries())
+           {
+            document.writeln(k+":"+v)
+           }
+
+        demomap.clear()
+        document.writeln("</br>")
+        document.writeln(" map size="+demomap.size)
+
+        
+            
+
+
+        </script>
+
+    </head>
+    <body>
+      
+    </body>
+</html>

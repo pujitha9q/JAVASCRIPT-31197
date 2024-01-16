@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>demo27</title>
+        <script>
+          // decalring an array using new keyword 
+              let arr = new Array() // size is optional
+              const n = parseInt(prompt("Enter Array Size",1))
+              alert("Reading Array Elements ")
+              for( let i=0;i<n;i++)
+              {
+                 
+                arr[i] = parseInt(prompt("Enter Element "+(i+1)))
+              }
+
+              document.writeln('Array elements </br>')
+              for(let element of arr)
+              {
+                document.writeln(element+"</br>")
+              }
+               
+              const course = new Array("aws","mswd","pfsd") // construcor -providing values while declaring.
+
+              document.writeln("course array  length :"+course.length+"</br>")
+              document.writeln("course type ="+typeof course+"</br>")
+
+
+              document.writeln("<u> course Array Elements</u></br>")
+              for( let c of course)
+              {
+                document.writeln(c)
+              }
+              
+
+        </script>
+
+    </head>
+    <body>
+      
+    </body>
+</html>
